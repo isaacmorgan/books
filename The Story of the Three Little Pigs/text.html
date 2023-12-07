@@ -1,0 +1,460 @@
+<style>
+@font-face {
+  font-family: "adobe-caslon-pro";
+  src: url("./font/adobe-caslon-pro.woff2") format("woff2");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "adobe-caslon-pro";
+  src: url("./font/adobe-caslon-pro-italic.woff2") format("woff2");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+html {
+  font-size: x-large;
+  background-color: #ECE3D1;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "adobe-caslon-pro", serif;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img, picture{
+  width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+.sticky, .sticky img {
+  position: sticky;
+  grid-column-start: 1;
+  top: 0;
+  grid-row: 1 / 10;
+}
+
+.content_scroll {
+  grid-column-start: 2;
+  margin-bottom: 0;
+}
+
+.full_width {
+  grid-column: 1 / 3;
+}
+
+p, h2 {
+  width: 100%;
+  max-width: 30em;
+  justify-self: center;
+  text-indent: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.standalone {
+  grid-row: 1 / 10;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h2 {
+  text-indent: 0;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.title {
+  font-variant: small-caps;
+  background-color: #ECE3D1;
+}
+
+.pigs_bg {
+  background-image: url("./img/002.png");
+  background-size: contain;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.footer {
+  background-color: #ECE3D1;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-indent: 0;
+  width: auto;
+}
+
+.spacer {
+  height: 4em;
+}
+
+@media screen and (max-aspect-ratio: 1) {  
+  section {
+    grid-template-columns: 1fr;
+  }
+  
+  .sticky {
+    position: static;
+    grid-column-start: 1;
+    grid-row: auto;
+  }
+
+  .content_scroll {
+    grid-column-start: 1;
+  }
+  
+  .standalone {
+    grid-row: auto;
+  }
+  
+  .spacer {
+    height: 0;
+  }
+}
+
+</style>
+
+<article>
+<section class="pigs_bg">
+<h2 class="full_width title">The Story of the Three Little Pigs<br/>With Drawings by L. Leslie Brooke</h2>
+</section>
+
+<section>
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/001.jxl" type="image/jxl" />
+    <source srcset="./img/avif/001.avif" type="image/avif" />
+    <source srcset="./img/webp/001.webp" type="image/webp" />
+    <source srcset="./img/png/001.png" type="image/png" />
+    <img src="./img/jpeg/001.jpg"/>
+  </picture>
+
+  <picture class="content_scroll standalone">
+    <source srcset="./img/jpegxl/003.jxl" type="image/jxl" />
+    <source srcset="./img/avif/003.avif" type="image/avif" />
+    <source srcset="./img/webp/003.webp" type="image/webp" />
+    <source srcset="./img/png/003.png" type="image/png" />
+    <img src="./img/jpeg/003.jpg"/>
+  </picture>
+</section>
+
+<section>
+<div class="content_scroll spacer"></div>
+
+<h2 class="content_scroll">The Story of the Three Little Pigs.</h2>
+
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/005.jxl" type="image/jxl" />
+    <source srcset="./img/avif/005.avif" type="image/avif" />
+    <source srcset="./img/webp/005.webp" type="image/webp" />
+    <source srcset="./img/png/005.png" type="image/png" />
+    <img src="./img/jpeg/005.jpg"/>
+  </picture>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/004.jxl" type="image/jxl" />
+    <source srcset="./img/avif/004.avif" type="image/avif" />
+    <source srcset="./img/webp/004.webp" type="image/webp" />
+    <source srcset="./img/png/004.png" type="image/png" />
+    <img src="./img/jpeg/004.jpg"/>
+  </picture>
+
+<p class="content_scroll">Once upon a time there was an old Sow with three little Pigs, and as she had not enough to keep them, she sent them out to seek their fortune.</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/006.jxl" type="image/jxl" />
+    <source srcset="./img/avif/006.avif" type="image/avif" />
+    <source srcset="./img/webp/006.webp" type="image/webp" />
+    <source srcset="./img/png/006.png" type="image/png" />
+    <img src="./img/jpeg/006.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+</section>
+
+<section>
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/008.jxl" type="image/jxl" />
+    <source srcset="./img/avif/008.avif" type="image/avif" />
+    <source srcset="./img/webp/008.webp" type="image/webp" />
+    <source srcset="./img/png/008.png" type="image/png" />
+    <img src="./img/jpeg/008.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/007.jxl" type="image/jxl" />
+    <source srcset="./img/avif/007.avif" type="image/avif" />
+    <source srcset="./img/webp/007.webp" type="image/webp" />
+    <source srcset="./img/png/007.png" type="image/png" />
+    <img src="./img/jpeg/007.jpg"/>
+  </picture>
+
+<p class="content_scroll">The first that went off met a Man with a bundle of straw, and said to him, “Please, Man, give me that straw to build me a house”; which the Man did, and the little Pig built a house with it. Presently came along a Wolf, and knocked at the door, and said, “Little Pig, little Pig, let me come in.”</p>
+
+<p class="content_scroll">To which the Pig answered, “No, no, by the hair of my chinny chin chin.”</p>
+
+<p class="content_scroll">“Then I’ll huff and I’ll puff, and I’ll blow your house in!” said the Wolf. So he huffed and he puffed, and he blew his house in, and ate up the little Pig.</p>
+
+<p class="content_scroll">The second Pig met a Man with a bundle of furze, and said, “Please, Man, give me that furze to build a house”; which the Man did, and the Pig built his house.</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/009.jxl" type="image/jxl" />
+    <source srcset="./img/avif/009.avif" type="image/avif" />
+    <source srcset="./img/webp/009.webp" type="image/webp" />
+    <source srcset="./img/png/009.png" type="image/png" />
+    <img src="./img/jpeg/009.jpg"/>
+  </picture>
+
+<p class="content_scroll">Then along came the Wolf and said, “Little Pig, little Pig, let me come in.”</p>
+
+<p class="content_scroll">“No, no, by the hair of my chinny chin chin.”</p>
+
+<p class="content_scroll">“Then I’ll puff and I’ll huff, and I’ll blow your house in!” So he huffed and he puffed, and he puffed and he huffed, and at last he blew the house down, and ate up the second little Pig.</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/010.jxl" type="image/jxl" />
+    <source srcset="./img/avif/010.avif" type="image/avif" />
+    <source srcset="./img/webp/010.webp" type="image/webp" />
+    <source srcset="./img/png/010.png" type="image/png" />
+    <img src="./img/jpeg/010.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+</section>
+
+<section>
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/011.jxl" type="image/jxl" />
+    <source srcset="./img/avif/011.avif" type="image/avif" />
+    <source srcset="./img/webp/011.webp" type="image/webp" />
+    <source srcset="./img/png/011.png" type="image/png" />
+    <img src="./img/jpeg/011.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+
+<p class="content_scroll">The third little Pig met a Man with a load of bricks, and said, “Please, Man, give me those bricks to build a house with”; so the Man gave him the bricks, and he built his house with them. So the Wolf came, as he did to the other little Pigs, and said, “Little Pig, little Pig, let me come in.”</p>
+
+<p class="content_scroll">“No, no, by the hair of my chinny chin chin.”</p>
+
+<p class="content_scroll">“Then I’ll huff and I’ll puff, and I’ll blow your house in.”</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/012.jxl" type="image/jxl" />
+    <source srcset="./img/avif/012.avif" type="image/avif" />
+    <source srcset="./img/webp/012.webp" type="image/webp" />
+    <source srcset="./img/png/012.png" type="image/png" />
+    <img src="./img/jpeg/012.jpg"/>
+  </picture>
+
+<p class="content_scroll">Well, he huffed and he puffed, and he huffed and he puffed, and he puffed and he huffed; but he could <em>not</em> get the house down. When he found out that he could not, with all his huffing and puffing, blow the house down, he said, “Little Pig, I know where there is a nice field of turnips.”</p>
+
+<div class="content_scroll spacer"></div>
+</section>
+
+<section>
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/014.jxl" type="image/jxl" />
+    <source srcset="./img/avif/014.avif" type="image/avif" />
+    <source srcset="./img/webp/014.webp" type="image/webp" />
+    <source srcset="./img/png/014.png" type="image/png" />
+    <img src="./img/jpeg/014.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+
+<p class="content_scroll">“Where?” said the little Pig.</p>
+
+<p class="content_scroll">“Oh, in Mr. Smith’s home-field; and if you will be ready to-morrow morning, I will call for you, and we will go together and get some for dinner.”</p>
+
+<p class="content_scroll">“Very well,” said the little Pig, “I will be ready. What time do you mean to go?”</p>
+
+<p class="content_scroll">“Oh, at six o’clock.”</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/013.jxl" type="image/jxl" />
+    <source srcset="./img/avif/013.avif" type="image/avif" />
+    <source srcset="./img/webp/013.webp" type="image/webp" />
+    <source srcset="./img/png/013.png" type="image/png" />
+    <img src="./img/jpeg/013.jpg"/>
+  </picture>
+
+<p class="content_scroll">Well, the little Pig got up at five, and got the turnips and was home again before six. When the Wolf came he said, “Little Pig, are you ready?”</p>
+
+<div class="content_scroll spacer"></div>
+</section>
+
+<section>
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/015.jxl" type="image/jxl" />
+    <source srcset="./img/avif/015.avif" type="image/avif" />
+    <source srcset="./img/webp/015.webp" type="image/webp" />
+    <source srcset="./img/png/015.png" type="image/png" />
+    <img src="./img/jpeg/015.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+
+<p class="content_scroll">“Ready!” said the little Pig, “I have been and come back again, and got a nice pot-full for dinner.”</p>
+
+<p class="content_scroll">The Wolf felt very angry at this, but thought that he would be <em>up to</em> the little Pig somehow or other; so he said, “Little Pig, I know where there is a nice apple-tree.”</p>
+
+<p class="content_scroll">“Where?” said the Pig.</p>
+
+<p class="content_scroll">“Down at Merry-garden,” replied the Wolf; “and if you will not deceive me I will come for you, at five o’clock to-morrow, and we will go together and get some apples.”</p>
+
+<div class="content_scroll spacer"></div>
+</section>
+
+<section>
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/018.jxl" type="image/jxl" />
+    <source srcset="./img/avif/018.avif" type="image/avif" />
+    <source srcset="./img/webp/018.webp" type="image/webp" />
+    <source srcset="./img/png/018.png" type="image/png" />
+    <img src="./img/jpeg/018.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/016.jxl" type="image/jxl" />
+    <source srcset="./img/avif/016.avif" type="image/avif" />
+    <source srcset="./img/webp/016.webp" type="image/webp" />
+    <source srcset="./img/png/016.png" type="image/png" />
+    <img src="./img/jpeg/016.jpg"/>
+  </picture>
+
+<p class="content_scroll">Well, the little Pig woke at four the next morning, and bustled up, and went off for the apples, hoping to get back before the Wolf came; but he had farther to go, and had to climb the tree, so that just as he was coming down from it, he saw the Wolf coming, which, as you may suppose, frightened him very much. When the Wolf came up he said, “Little Pig, what! are you here before me? Are they nice apples?”</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/017.jxl" type="image/jxl" />
+    <source srcset="./img/avif/017.avif" type="image/avif" />
+    <source srcset="./img/webp/017.webp" type="image/webp" />
+    <source srcset="./img/png/017.png" type="image/png" />
+    <img src="./img/jpeg/017.jpg"/>
+  </picture>
+
+<p class="content_scroll">“Yes, very,” said the little Pig; “I will throw you down one.” And he threw it so far that, while the Wolf was gone to pick it up, the little Pig jumped down and ran home.</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/019.jxl" type="image/jxl" />
+    <source srcset="./img/avif/019.avif" type="image/avif" />
+    <source srcset="./img/webp/019.webp" type="image/webp" />
+    <source srcset="./img/png/019.png" type="image/png" />
+    <img src="./img/jpeg/019.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+</section>
+
+<section>
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/021.jxl" type="image/jxl" />
+    <source srcset="./img/avif/021.avif" type="image/avif" />
+    <source srcset="./img/webp/021.webp" type="image/webp" />
+    <source srcset="./img/png/021.png" type="image/png" />
+    <img src="./img/jpeg/021.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+
+<p class="content_scroll">The next day the Wolf came again, and said to the little Pig, “Little Pig, there is a Fair in the Town this afternoon: will you go?”</p>
+
+<p class="content_scroll">“Oh, yes,” said the Pig, “I will go; what time shall you be ready?”</p>
+
+<p class="content_scroll">“At three,” said the Wolf.</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/020.jxl" type="image/jxl" />
+    <source srcset="./img/avif/020.avif" type="image/avif" />
+    <source srcset="./img/webp/020.webp" type="image/webp" />
+    <source srcset="./img/png/020.png" type="image/png" />
+    <img src="./img/jpeg/020.jpg"/>
+  </picture>
+
+<p class="content_scroll">So the little Pig went off before the time, as usual, and got to the Fair, and bought a butter churn, and was on his way home with it when he saw the Wolf coming. Then he could not tell what to do. So he got into the churn to hide, and in doing so turned it round, and it began to roll, and rolled down the hill with the Pig inside it, which frightened the Wolf so much that he ran home without going to the Fair.</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/022.jxl" type="image/jxl" />
+    <source srcset="./img/avif/022.avif" type="image/avif" />
+    <source srcset="./img/webp/022.webp" type="image/webp" />
+    <source srcset="./img/png/022.png" type="image/png" />
+    <img src="./img/jpeg/022.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+</section>
+
+<section>
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/024.jxl" type="image/jxl" />
+    <source srcset="./img/avif/024.avif" type="image/avif" />
+    <source srcset="./img/webp/024.webp" type="image/webp" />
+    <source srcset="./img/png/024.png" type="image/png" />
+    <img src="./img/jpeg/024.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+
+<p class="content_scroll">He went to the little Pig’s house, and told him how frightened he had been by a great round thing which came down the hill past him.</p>
+
+<p class="content_scroll">Then the little Pig said, “Hah! I frightened you, did I? I had been to the Fair and bought a butter churn, and when I saw you I got into it, and rolled down the hill.”</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/023.jxl" type="image/jxl" />
+    <source srcset="./img/avif/023.avif" type="image/avif" />
+    <source srcset="./img/webp/023.webp" type="image/webp" />
+    <source srcset="./img/png/023.png" type="image/png" />
+    <img src="./img/jpeg/023.jpg"/>
+  </picture>
+
+<p class="content_scroll">Then the Wolf was very angry indeed, and declared he <em>would</em> eat up the little Pig, and that he would get down the chimney after him.</p>
+
+<p class="content_scroll">When the little Pig saw what he was about, he hung on the pot full of water, and made up a blazing fire, and, just as the Wolf was coming down, took off the cover of the pot, and in fell the Wolf. And the little Pig put on the cover again in an instant, boiled him up, and ate him for supper, and lived happy ever after.</p>
+
+  <picture class="content_scroll">
+    <source srcset="./img/jpegxl/025.jxl" type="image/jxl" />
+    <source srcset="./img/avif/025.avif" type="image/avif" />
+    <source srcset="./img/webp/025.webp" type="image/webp" />
+    <source srcset="./img/png/025.png" type="image/png" />
+    <img src="./img/jpeg/025.jpg"/>
+  </picture>
+
+<div class="content_scroll spacer"></div>
+</section>
+
+<section>
+<img class="content_scroll standalone" src="./img/026.png">
+
+  <picture class="sticky">
+    <source srcset="./img/jpegxl/028.jxl" type="image/jxl" />
+    <source srcset="./img/avif/028.avif" type="image/avif" />
+    <source srcset="./img/webp/028.webp" type="image/webp" />
+    <source srcset="./img/png/028.png" type="image/png" />
+    <img src="./img/jpeg/028.jpg"/>
+  </picture>
+</section>
+
+<section class="pigs_bg">
+<p class="full_width footer">
+Webpage created by Alvin Isaac Morgan<br/>
+<a href="https://read.gov/books/pageturner/2003juv81093/#page/2/mode/2up">Original scans provided by the Library of Congress.</a><br/>
+<a href="https://www.loc.gov/free-to-use/classic-childrens-books/">Read more public domain children’s books online.</a>
+</p>
+</section>
+</article>
